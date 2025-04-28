@@ -4,6 +4,13 @@
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts"
+		},
+		"ghcr.io/devcontainers/features/aws-cli:1": {},
+		"ghcr.io/devcontainers/features/git:1": {}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -14,11 +21,57 @@
 		"vscode": {
 			"settings": {},
 			"extensions": [
+				"amazonwebservices.amazon-q-vscode",
+				"amazonwebservices.aws-toolkit-vscode",
+				"aws-scripting-guy.cform",
+				"dbaeumer.vscode-eslint",
+				"dsznajder.es7-react-js-snippets",
+				"eamodio.gitlens",
+				"ecmel.vscode-html-css",
+				"firefox-devtools.vscode-firefox-debug",
+				"github.copilot",
+				"github.copilot-chat",
+				"github.vscode-pull-request-github",
+				"google.geminicodeassist",
+				"googlecloudtools.cloudcode",
+				"hashicorp.terraform",
+				"hediet.vscode-drawio",
+				"ms-azuretools.vscode-azureresourcegroups",
+				"ms-azuretools.vscode-azureterraform",
+				"ms-azuretools.vscode-docker",
+				"ms-cst-e.vscode-devskim",
+				"ms-dotnettools.vscode-dotnet-runtime",
+				"ms-edgedevtools.vscode-edge-devtools",
+				"ms-kubernetes-tools.vscode-kubernetes-tools",
+				"ms-python.debugpy",
+				"ms-python.isort",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.vscode-jupyter-cell-tags",
+				"ms-toolsai.vscode-jupyter-slideshow",
+				"ms-vscode-remote.remote-containers",
+				"ms-vscode.azure-account",
+				"ms-vscode.cpptools",
+				"msazurermtools.azurerm-vscode-tools",
+				"redhat.java",
+				"redhat.vscode-yaml",
+				"tamasfe.even-better-toml",
+				"visualstudioexptteam.intellicode-api-usage-examples",
+				"visualstudioexptteam.vscodeintellicode",
+				"vscjava.vscode-gradle",
+				"vscjava.vscode-java-debug",
+				"vscjava.vscode-java-dependency",
+				"vscjava.vscode-java-pack",
+				"vscjava.vscode-java-test",
+				"vscjava.vscode-maven",
 				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	},
-	
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [9000],
 
